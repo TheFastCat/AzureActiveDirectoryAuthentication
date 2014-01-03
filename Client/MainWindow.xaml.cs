@@ -53,6 +53,7 @@ namespace WpfApplication1
             HttpClient httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.Authorization =
                 new AuthenticationHeaderValue("Bearer", ar.AccessToken);
+
             HttpResponseMessage response = httpClient.GetAsync("https://localhost:44304/api/Values").Result;
             // display the result
             if (response.IsSuccessStatusCode)
@@ -62,6 +63,10 @@ namespace WpfApplication1
             }
         }
 
+        /// <summary>
+        /// intercept the certificate check and pass-through if the scope involves a localhost
+        /// </summary>
+        /// <see cref="http://goo.gl/Ypb6yv"/>
         private static bool customXertificateValidation(object sender, X509Certificate cert, X509Chain chain, SslPolicyErrors error)
         {
             if (cert.Subject == "CN=localhost")
