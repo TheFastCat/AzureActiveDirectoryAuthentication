@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{36137E
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{EA7D12A5-0ED7-4853-A6EA-500C5927ADED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{178C0435-20CE-481B-BB09-83D5A75101AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{178C0435-20CE-481B-BB09-83D5A75101AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{178C0435-20CE-481B-BB09-83D5A75101AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA7D12A5-0ED7-4853-A6EA-500C5927ADED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA7D12A5-0ED7-4853-A6EA-500C5927ADED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA7D12A5-0ED7-4853-A6EA-500C5927ADED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA7D12A5-0ED7-4853-A6EA-500C5927ADED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,5 @@
   ///////////////////////////////////////////////
- //// OVERVIEW               version 0.0.01 ////
+ //// OVERVIEW               version 0.0.02 ////
 ///////////////////////////////////////////////
 
 This solution is useful for learning how Azure Active Directory interacts with an application in order to provide authentication and authorization.
@@ -12,3 +12,5 @@ Ask Reid for associated credentials to login when prompted during execution of t
 
 Other implementors can modify arguments of Client.csproj to point to their own deployment of an Azure Active Directory tenant as described in the 
 tutorial, above.
+
+WebClient.csproj relates to this tutorial: http://goo.gl/OAo6XS

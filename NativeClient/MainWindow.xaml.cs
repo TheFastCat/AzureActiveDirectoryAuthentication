@@ -26,7 +26,7 @@ namespace NativeClient
             AuthenticationContext ac = new AuthenticationContext("https://login.windows.net/SalesApplication.onmicrosoft.com");//the 'App ID URI' of the secured resource/API trying to access as configured in AAD 
             
             AuthenticationResult ar =
-              ac.AcquireToken("https://SalesApplication.onmicrosoft.com/WebApplication1", //the "name" of the secured resource/API trying to access as configured in AAD ('App ID URI')
+              ac.AcquireToken("https://SalesApplication.onmicrosoft.com/WebAPIDemo", //the "name" of the secured resource/API trying to access as configured in AAD ('App ID URI')
               "5685ff14-3fb8-4785-a78e-6f81219b39f8",// the 'client ID' for this client application as configured in AAD
               new Uri("https://SalesApplication.onmicrosoft.com/myWebAPInativeclient"));// the redirect URI for this client application as configured in AAD
 
