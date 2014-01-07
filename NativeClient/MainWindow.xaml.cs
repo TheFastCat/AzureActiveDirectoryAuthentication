@@ -7,7 +7,7 @@ using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows;
 
-namespace WpfApplication1
+namespace NativeClient
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
