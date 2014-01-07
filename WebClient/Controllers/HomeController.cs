@@ -34,8 +34,9 @@ namespace WebClient.Controllers
 
         public ActionResult About()
         {
+            string claimsValue = ClaimsPrincipal.Current.FindFirst(TenantIdClaimType).Value;
                string authorizationUrl = string.Format("https://login.windows.net/{0}/oauth2/authorize?api-version=1.0&response_type=code&client_id={1}&resource={2}&redirect_uri={3}",
-                   ClaimsPrincipal.Current.FindFirst(TenantIdClaimType).Value,
+                   claimsValue,
                    AppPrincipalId,
                    "https://SalesApplication.onmicrosoft.com/WebApiDemo",
                    "https://localhost:44306/Home/CatchCode"
